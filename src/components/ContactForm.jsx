@@ -63,6 +63,10 @@ const ContactForm = () => {
   };
 
   return (
+    <section className="section blog" id="contact-form">
+    <div className="container">
+      <h2 className="h2 section-title underline">Contact Us Form</h2>
+      <ul className="blog-list">
     <Form onSubmit={handleSubmit} style={formStyle}>
       <FormGroup>
         <Label for="name" style={labelStyle}>Name</Label>
@@ -78,6 +82,9 @@ const ContactForm = () => {
       </FormGroup>
       <Button type="submit" style={{ ...buttonStyle }} onMouseEnter={() => { setButtonStyle({ ...buttonStyle, ...buttonHoverStyle }); }} onMouseLeave={() => { setButtonStyle({ ...buttonStyle }); }}>Submit</Button>
     </Form>
+    </ul>
+    </div>
+  </section>
   );
 };
 
