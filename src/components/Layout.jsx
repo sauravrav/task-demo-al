@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { IoMenuOutline } from "react-icons/io5";
+import { IoLogoInstagram, IoLogoLinkedin, IoLogoYoutube, IoMenuOutline } from "react-icons/io5";
 import { RxCross1 } from "react-icons/rx";
+import { IoLogoFacebook } from "react-icons/io5";
 
 const Layout = ({ children }) => {
   const [navbarActive, setNavbarActive] = useState(false);
@@ -15,13 +16,13 @@ const Layout = ({ children }) => {
           <div className="overlay"></div>
 
           <a href="/">
-            <h1 className="logo">CanAus Nepal</h1>
+            <h1 className="logo">Aakash Labs</h1>
           </a>
 
           <nav className={`navbar ${navbarActive ? "active" : ""}`}>
             <div className="navbar-top">
               <a href="/" className="logo">
-                CanAus
+                Aakash Labs
               </a>
 
               <button
@@ -36,48 +37,43 @@ const Layout = ({ children }) => {
             <ul className="navbar-list">
               <li className="navbar-item">
                 <a href="/#home" className="navbar-link" onClick={toggleNavbar}>
-                  Home
+                  Slider
                 </a>
               </li>
 
               <li className="navbar-item">
                 <a href="/#about" className="navbar-link" onClick={toggleNavbar}>
-                  About
+                  AboutUs
                 </a>
               </li>
 
               <li className="navbar-item">
                 <a
-                  href="/#services"
+                  href="/#our-team"
                   className="navbar-link"
                   onClick={toggleNavbar}
                 >
-                  Services
+                  Our Team
                 </a>
               </li>
 
               <li className="navbar-item">
-                <a href="/#training" className="navbar-link" onClick={toggleNavbar}>
-                  Training
+                <a href="/#contact-form" className="navbar-link" onClick={toggleNavbar}>
+                  Contact Form
                 </a>
               </li>
 
               <li className="navbar-item">
-                <a href="#bottomfooter" className="navbar-link" onClick={toggleNavbar}>
-                  Contact Us
+                <a href="/#bottomfooter" className="navbar-link" onClick={toggleNavbar}>
+                  Footer
                 </a>
               </li>
             </ul>
           </nav>
 
-          {/* <a href="/appointment" className="btn">
-            <ion-icon
-              name="chevron-forward-outline"
-              aria-hidden="true"
-            ></ion-icon>
-
-            <span>Book an Apointment</span>
-          </a> */}
+          <a href="/free-api" className="btn">
+            <span>Free Api</span>
+          </a>
 
           <button
             className="nav-open-btn"
@@ -94,13 +90,11 @@ const Layout = ({ children }) => {
           <div className="container">
             <div className="footer-brand">
               <a href="#" className="logo">
-                CanAus
+                Aakash Labs
               </a>
 
               <p className="text">
-                CanAus consultancy provides expert study abroad services,
-                including university selection, test prep, visa assistance, and
-                pre-departure preparation.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatum exercitationem nesciunt autem fugit consequatur debitis. Earum.
               </p>
             </div>
 
@@ -122,21 +116,20 @@ const Layout = ({ children }) => {
               </li>
 
               <li>
-                <a href="#services" className="footer-link">
-                  Services
+                <a href="#our-team" className="footer-link">
+                  Our Team
                 </a>
               </li>
 
               <li>
-                <a href="#training" className="footer-link">
-                  Training
+                <a href="#contact-form" className="footer-link">
+                  Contact Form
                 </a>
               </li>
-
               <li>
-                <a href="#destinations" className="footer-link">
-                  Destinations
-                </a>
+              <a href="/free-api" className="footer-link">
+                Free Api
+              </a>
               </li>
             </ul>
 
@@ -147,25 +140,25 @@ const Layout = ({ children }) => {
 
               <li>
                 <a href="https://facebook.com" className="footer-link">
-                  Facebook
+                  <IoLogoFacebook style={{height:'40px',width:'40px'}} />
                 </a>
               </li>
 
               <li>
                 <a href="https://instagram.com" className="footer-link">
-                  Instagram
+                  <IoLogoInstagram style={{height:'40px',width:'40px'}} />
                 </a>
               </li>
 
               <li>
                 <a href="https://linkedin.com" className="footer-link">
-                  Linkedin
+                <IoLogoLinkedin style={{height:'40px',width:'40px'}} />
                 </a>
               </li>
 
               <li>
                 <a href="https://youtube.com" className="footer-link">
-                  Youtube
+                <IoLogoYoutube style={{height:'40px',width:'40px'}} />
                 </a>
               </li>
             </ul>
@@ -178,7 +171,7 @@ const Layout = ({ children }) => {
               <li className="footer-item">
                 <div>
                   <a href="tel:+2484214313" className="footer-item-link">
-                    9851131509
+                    98123456789
                   </a>
                 </div>
               </li>
@@ -189,7 +182,7 @@ const Layout = ({ children }) => {
                     href="mailto:info.canausconsulting@gmail.com"
                     className="footer-item-link"
                   >
-                    info.canausconsulting@gmail.com
+                    info@email.com
                   </a>
                 </div>
               </li>

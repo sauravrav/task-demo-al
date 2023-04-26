@@ -331,9 +331,9 @@
   \*-----------------------------------*/
   
   .hero {
-    background-image: url("../images/hero-bg-bottom.png"),
+    /* background-image: url("../images/hero-bg-bottom.png"),
                       url("../images/hero-bg.png"),
-                      var(--gradient-1);
+                      var(--gradient-1); */
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: -280px bottom, center, center;
     background-size: auto, cover, auto;
@@ -424,7 +424,7 @@
   }
   
   .service-card .card-icon {
-    background-image: url("../images/service-banner-pattern.png");
+    /* background-image: url("../images/service-banner-pattern.png"); */
     background-repeat: no-repeat;
     background-size: contain;
     background-color: hsla(335, 87%, 53%, 0.12);
@@ -595,7 +595,7 @@
   .footer a { color: inherit; }
   
   .footer-top {
-    background-image: url("../images/footer-bg.png"), var(--gradient-1);
+    background-image: url("/images/footer-bg.png"), var(--gradient-1);
     background-repeat: no-repeat;
     background-size: auto, 200%;
     background-position: center, center;
