@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
-import Joke from './free-api';
+import Joke from '../pages/free-api';
 
 jest.mock('axios', () => ({
   get: jest.fn(() =>
